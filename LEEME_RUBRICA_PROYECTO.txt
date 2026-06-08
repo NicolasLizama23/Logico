@@ -1,0 +1,56 @@
+LogiCo - Ajuste enfocado en rúbrica Entrega 3
+
+Este paquete se centra solo en lo necesario dentro del proyecto funcional:
+
+1) 3.1.1.1 - Funcionalidad de interfaz y negocio
+- Se mantiene el módulo Administrador con mantenedores y módulos completos.
+- El módulo Movimientos permite registrar los 4 tipos exigidos:
+  Directo, Receta, Traslado y Reenvio.
+- La base de datos incluye data de prueba para 3 locales distintos:
+  Farmacia Cruz Verde Local Arica / Arica,
+  Farmacia Cruz Verde Local Norte / Recoleta,
+  Farmacia Cruz Verde Local Austral / Punta Arenas.
+- Cada local tiene un motorista distinto:
+  Felipe Rojas, Carlos Muñoz y Diego Vargas.
+- El Operador Control de Despacho tiene un listado general de movimientos con:
+  fecha, código, tipo, local origen, destino, cliente, estado, motorista y moto.
+
+2) Roles funcionales
+- Administrador: ve Farmacias, Motoristas, Motos, Asignaciones, Movimientos y Reportes.
+- Farmacia Central: genera órdenes de despacho y consulta estados.
+- Operador Control de Despacho: monitorea todos los despachos y asigna motoristas/motos.
+- Local de Despacho: gestiona pedidos de su local asociado.
+- Motorista: consulta pedidos asignados, cambia estados y reporta incidencias.
+
+3) Seguridad y buenas prácticas
+- Login por rol.
+- Redirección automática al panel correspondiente.
+- Protección de rutas con require_role().
+- Contraseñas con password_hash/password_verify.
+- Sesión con expiración por inactividad.
+- Consultas preparadas con PDO.
+- Sanitización de salida con función e().
+- Transacción en asignación de motorista/moto.
+- Comentarios agregados en archivos clave.
+
+Usuarios de prueba, todos con contraseña: Logico123
+
+admin@logico.cl              Administrador
+central@logico.cl            Farmacia Central
+operador@logico.cl           Operador Control Despacho
+motorista.arica@logico.cl    Motorista Felipe Rojas / Arica
+motorista@logico.cl          Motorista Carlos Muñoz / Recoleta
+motorista.austral@logico.cl  Motorista Diego Vargas / Punta Arenas
+local.arica@logico.cl        Local de Despacho Arica
+local@logico.cl              Local de Despacho Recoleta
+local.austral@logico.cl      Local de Despacho Punta Arenas
+
+Instalación rápida:
+1. Copiar la carpeta logico_entrega3 en C:\xampp\htdocs\
+2. Importar database/logico.sql en phpMyAdmin.
+3. Entrar a http://localhost/logico_entrega3/
+
+
+Actualización geográfica Chile:
+- Farmacias y motoristas registran dirección completa, comuna, provincia y región.
+- Los datos de prueba usan regiones distintas: Región de Arica y Parinacota, Región Metropolitana de Santiago y Región de Magallanes y de la Antártica Chilena.

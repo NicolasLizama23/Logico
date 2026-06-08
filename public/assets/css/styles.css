@@ -1,0 +1,247 @@
+:root {
+    --logico-dark: #163d3a;
+    --logico-green: #b8ffc8;
+    --logico-green-soft: #e8ffd7;
+    --logico-green-muted: #dfeee0;
+    --logico-button: #a8ffd8;
+    --logico-border: #404040;
+    --logico-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--logico-bg);
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background: var(--logico-green);
+}
+
+.navbar {
+    min-height: 64px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--logico-dark) !important;
+    font-weight: 800;
+    letter-spacing: .3px;
+    text-decoration: none;
+}
+
+.logo-mark {
+    display: grid;
+    grid-template-columns: repeat(2, 11px);
+    grid-template-rows: repeat(2, 11px);
+    gap: 5px;
+}
+
+.logo-mark span {
+    width: 11px;
+    height: 11px;
+    background: #0a9a36;
+    display: block;
+}
+
+.logo-text {
+    font-size: 1.65rem;
+    line-height: 1;
+    border-bottom: 3px solid var(--logico-dark);
+}
+
+.nav-link {
+    color: #132f2d !important;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding-inline: 14px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: var(--logico-green-soft);
+    border-color: var(--logico-border);
+}
+
+.hero-card,
+.panel-card {
+    background: var(--logico-green-soft);
+    border: 1px solid var(--logico-border);
+    border-radius: 24px;
+}
+
+.hero-card {
+    max-width: 920px;
+    margin: 30px auto;
+    padding: 36px;
+}
+
+.panel-card {
+    padding: 22px;
+}
+
+.module-card {
+    background: #fff;
+    border: 1px solid var(--logico-border);
+    border-radius: 18px;
+    padding: 22px;
+    height: 100%;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,.08);
+}
+
+.btn-logico {
+    background: var(--logico-button);
+    border: 1px solid var(--logico-border);
+    color: #111;
+    font-weight: 600;
+}
+
+.btn-logico:hover,
+.btn-logico:focus {
+    background: #91f7c9;
+    border-color: #111;
+    color: #111;
+}
+
+.btn-outline-logico {
+    background: #fff;
+    border: 1px solid var(--logico-border);
+    color: #111;
+    font-weight: 600;
+}
+
+.btn-outline-logico:hover,
+.btn-outline-logico:focus {
+    background: var(--logico-green-soft);
+    color: #111;
+}
+
+.table-logico {
+    border: 1px solid var(--logico-border);
+}
+
+.table-logico thead th {
+    background: #4bd05c;
+    border-color: var(--logico-border);
+    color: #000;
+    vertical-align: middle;
+}
+
+.table-logico td,
+.table-logico th {
+    border-color: var(--logico-border);
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--logico-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0a9a36;
+    box-shadow: 0 0 0 .2rem rgba(10,154,54,.16);
+}
+
+.section-title {
+    color: var(--logico-dark);
+    font-weight: 800;
+}
+
+.badge-logico {
+    background: var(--logico-green-soft);
+    border: 1px solid var(--logico-border);
+    color: #111;
+}
+
+.footer-strip {
+    height: 56px;
+    background: var(--logico-green-muted);
+}
+
+.action-grid {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.empty-state {
+    border: 1px dashed var(--logico-border);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 24px;
+        margin-top: 18px;
+    }
+
+    .logo-text {
+        font-size: 1.35rem;
+    }
+
+    .table-responsive {
+        border: 1px solid var(--logico-border);
+        border-radius: 14px;
+    }
+}
+
+.auth-card {
+    max-width: 520px;
+}
+
+.nav-user {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid var(--logico-border);
+    border-radius: 8px;
+    background: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.metric-card {
+    background: #fff;
+    border: 1px solid var(--logico-border);
+    border-radius: 18px;
+    padding: 18px;
+    min-height: 110px;
+}
+
+.metric-card span {
+    display: block;
+    font-size: .9rem;
+    margin-bottom: 8px;
+}
+
+.metric-card strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--logico-dark);
+}
+
+code {
+    color: #111;
+    background: #fff;
+    border: 1px solid var(--logico-border);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
