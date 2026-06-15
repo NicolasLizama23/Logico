@@ -25,7 +25,7 @@ $flash = get_flash();
         <span class="logo-mark mb-2" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
         <h1 class="section-title mb-1">Panel Administrador</h1>
     </div>
-    <h2 class="h4 fw-bold mb-3">LogiCo - Entrega 3 por roles</h2>
+    <h2 class="h4 fw-bold mb-3">LogiCo</h2>
     <p class="mb-4">Vista general para administración completa: mantenedores, asignaciones, movimientos, reportes y seguridad.</p>
     <div class="row g-3 text-start">
         <div class="col-12 col-md-4"><a class="module-card d-block text-decoration-none text-dark" href="<?= e(app_url('modulos_page/farmacias.php')) ?>"><span class="badge badge-logico mb-3">Administración</span><h3 class="h5 fw-bold">Farmacias</h3><p class="mb-2">Agregar, listar, buscar, modificar y eliminar farmacias.</p><strong><?= $counts['farmacias'] ?></strong> registros</a></div>

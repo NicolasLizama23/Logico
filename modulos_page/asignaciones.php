@@ -126,7 +126,6 @@ $flash = get_flash();
 <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3 mb-4">
     <div>
         <h1 class="section-title h2 mb-1">Gestionar asignaciones</h1>
-        <p class="mb-0">Cubre HU016, HU017 y HU018: asignar motos, asignar motoristas a farmacias y reemplazar asignaciones.</p>
     </div>
 </div>
 

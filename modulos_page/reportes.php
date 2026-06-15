@@ -74,7 +74,6 @@ require_once __DIR__ . '/../includes/header.php';
 <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3 mb-4">
     <div>
         <h1 class="section-title h2 mb-1">Reportes de movimientos</h1>
-        <p class="mb-0">Cubre HU026, HU027 y HU028: reportes diarios, mensuales y anuales.</p>
     </div>
 </div>
 

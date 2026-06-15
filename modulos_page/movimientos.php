@@ -172,7 +172,6 @@ $flash = get_flash();
 <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3 mb-4">
     <div>
         <h1 class="section-title h2 mb-1">Gestionar movimientos</h1>
-        <p class="mb-0">Cubre HU019 a HU024: movimientos directos, con receta, traslado, reenvío, modificación y anulación.</p>
     </div>
     <div class="d-flex flex-wrap gap-2">
         <a href="movimientos.php?action=new&tipo=Directo" class="btn btn-logico">Directo</a>
